@@ -6,4 +6,4 @@
 
 多图片的拼接布局可以用flex布局的多种属性。
 
-[效果图]（https://lulujianglab.github.io/-puzzle-layout/）
+[效果图](https://lulujianglab.github.io/-puzzle-layout/)

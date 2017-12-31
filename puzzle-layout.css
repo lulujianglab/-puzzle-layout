@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.album {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+}
+
+/* 一图片样式 */
+
+.album1 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* 两图片样式 */
+
+/* 图片样式绝对定位占据同一块位置 */
+.album2 img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.album2 img:nth-child(1) {
+    -webkit-clip-path: polygon(0% 0%, 777.7777777% 0, 33.3333333% 100%, 0 100%);
+    clip-path: polygon(0% 0%, 777.7777777% 0, 33.3333333% 100%, 0 100%);
+}
+
+.album2 img:nth-child(2) {
+    -webkit-clip-path: polygon(77.7777777% 0%, 100% 0%, 100% 100%, 33.3333333% 100%);
+    clip-path: polygon(77.7777777% 0%, 100% 0%, 100% 100%, 33.3333333% 100%);
+}
+
+/* 三图片样式 */
+
+.album3-left {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%；
+}
+
+.album3-left img {
+    width: 100%;
+    height: 100%；
+}
+
+.album3-right {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    width: 33.3333333%; 
+    top: 0;
+    right: 0;
+}
+
+.album3-right img {
+    display: inline-block;
+    height: 50%;
+    width: 100%;
+}
+
+/* 四图片样式 */
+
+.album4-left {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.album4-left img {
+    height: 50%;
+    width: 100%;
+}
+
+.album4-right {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.album4-right img {
+    height: 50%;
+    width: 100%;
+}
+
+/* 五图片样式 */
+
+.album5-left {
+    position: absolute;
+    height: 100%;
+    width: 75%;
+    top: 0;
+    left: 0;
+}
+
+.album5-left-top {
+    overflow: hidden;
+    height: 66.666666667%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.album5-left-top img {
+    height: 100%;
+    width: 100%;
+}
+
+.album5-left-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 33.333333332%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.album5-left-bottom img {
+    width: 50%;
+    height: 100%;
+}
+
+.album5-right {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    width: 33.3333333%;
+    top: 0;
+    right: 0;
+}
+
+.album5-right img {
+    height: 50%;
+    width: 100%;
+}
+
+/* 六图片样式 */
+
+.album6-left {
+    position: absolute;
+    height: 100%;
+    width: 66.6666667%;
+}
+
+.album6-left-top {
+    overflow: hidden;
+    height: 66.666666667%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.album6-left-top img {
+    height: 100%;
+    width: 100%;
+}
+
+.album6-left-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 33.333333332%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.album6-left-bottom img {
+    height: 100%;
+    width: 50%;
+}
+
+.album6-right {
+    position: absolute;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 33.3333333%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.album6-right img {
+    width: 100%;
+    height: 33.333333333%;
+}
